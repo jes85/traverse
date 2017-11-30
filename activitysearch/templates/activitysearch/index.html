@@ -1,0 +1,14 @@
+{% if trips %}
+    {% for trip in trips %}
+        <ul>
+            <li>Activity: {{ trip.activity.name }}</li>
+            <li>Location: {{ trip.location.city }}, {{ trip.location.country }}</li>
+            <li>Cost: {{ trip.cost }}</li>
+            <li>Rating: {{ trip.rating }}</li>
+            <li>Distance: {{ trip.distance }}</li>
+
+        </ul>
+    {% endfor %}
+{% else %}
+    <p>No trips meet the search criteria.</p>
+{% endif %}
