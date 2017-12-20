@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,18 +8,18 @@
 	<meta name="author" content="traverse.com">
 	<meta name="description" content="Choose what you want to do. We'll tell you where to go."/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/main_responsive.css">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/carouFredSel.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'activitysearch/css/reset.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'activitysearch/css/main_responsive.css' %}">
+    <script type="text/javascript" src="{% static 'activitysearch/js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'activitysearch/js/carouFredSel.js' %}"></script>
+    <script type="text/javascript" src="{% static 'activitysearch/js/main.js' %}"></script>
 
 </head>
 <body>
 
 	<header>
 		<div class="wrapper">
-			<img src="img/Traverse.png" alt="Traverse" class="logo" width = "100" height = "40">
+			<img src="{% static 'activitysearch/img/Traverse.png' %}" alt="Traverse" class="logo" width = "100" height = "40">
 			<a href="#" class="menu_icon" id="menu_icon"></a>
 			<nav id="nav_menu">
 				<ul>
@@ -94,7 +96,7 @@
 				<h3 class = "headline" align="center"> What's Hot? </h3>
 				<div class="feature">
 					<div class="ficon">
-						<img src="img/skiing_icon.jpg" alt="">
+						<img src="{% static 'activitysearch/img/skiing_icon.jpg' %}" alt="">
 					</div>
 					<div class="details_exp" id = "skiing">
 						<h3>Skiing/Snowboarding</h3>
@@ -104,7 +106,7 @@
 				</div>
 				<div class="feature">
 					<div class="ficon">
-						<img src="img/hiking_icon.jpg" alt="">
+						<img src="{% static 'activitysearch/img/hiking_icon.jpg' %}" alt="">
 					</div>
 					<div class="details_exp" id="hiking">
 						<h3>Hiking</h3>
@@ -114,7 +116,7 @@
 				</div>
 				<div class="feature">
 					<div class="ficon">
-						<img src="img/rafting_icon.png" alt="">
+						<img src="{% static 'activitysearch/img/rafting_icon.png' %}" alt="">
 					</div>
 					<div class="details_exp" id="rafting">
 						<h3>White Water Rafting</h3>
@@ -124,7 +126,7 @@
 				</div>
 				<div class="feature">
 					<div class="ficon">
-						<img src="img/surfing_icon.jpg" alt="">
+						<img src="{% static 'activitysearch/img/surfing_icon.jpg' %}" alt="">
 					</div>
 					<div class="details_exp" id="surfing">
 						<h3>Surfing</h3>
