@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>traverse | Activity based travel search</title>
+	<meta charset="utf-8">
+	<meta name="author" content="traverse.com">
+	<meta name="description" content="Choose what you want to do. We'll tell you where to go."/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main_responsive.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/carouFredSel.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+<body>
+
+	<header>
+		<div class="wrapper">
+			<img src="img/Traverse.png" alt="Traverse" class="logo" width = "100" height = "40">
+			<a href="#" class="menu_icon" id="menu_icon"></a>
+			<nav id="nav_menu">
+				<ul>
+					<li><a href="#">Your Bucket List</a></li>
+					<li><a href="#">Set Alerts</a></li>
+					<li><a href="#">Our Story</a></li>
+					<li><a href="#">Create Account</a></li>
+					<li><a href="#">Login</a></li>
+				</ul>
+			</nav>
+
+			<ul class="social">
+				<li><a class="fb" href="#"></a></li>
+				<li><a class="twitter" href="#"></a></li>
+				<li><a class="gplus" href="#"></a></li>
+			</ul>
+		</div>
+	</header><!--  End Header  -->
+
+
+	<section class="billboard">
+			<!-- <div class="wrapper">
+				<div class="caption">
+					<p>Excepteu roccaecat</p>
+					<p>sunt culpa officia deserunt</p>
+				</div>
+			</div> -->
+		<div class="wrapper">
+			<h3 class="slogan" align="center">You pick what to do, we'll tell you where to go</h3>
+			<div class="search">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label for="activities" class="control-label">Activity</label>
+								<select class="form-control" name="" id="activities">
+									<option value="activity"></option>
+									<option value="activity">Skiing/Snowboarding</option>
+									<option value="activity">Surfing</option>
+									<option value="activity">White Water Rafting</option>
+								</select>
+
+								<label for="airports" class="control-label">Home Airport:</label>
+								<input list="airports" name="airports">
+								<datalist class="form-control" id="airports">
+									<option value="Charlotte (CLT)">
+									<option value="Baltimore (BWI)">
+									<option value=">Seattle (SEA)">
+								</datalist>
+							</input>
+							</div>
+						</form>
+					<div class="timeframe">
+							<a id="time" value="time1">This Weekend</a>
+							<a id="time" value="time2">Next Weekend</a>
+							<a id="time" value="time3">This Month</a>
+							<a id="time" value="time4">Next Month</a>
+							<a id="time" value="time5">This Winter</a>
+							<a id="time" value="time6">Next Spring</a>
+							<a id="time" value="time7">Next Summer</a>
+							<a id="time" value="time8">This Year</a>
+					</div>
+
+					<div class = "submit">
+							<button type="submit"> Search </button>
+					</div>
+
+					</div>
+		</div>
+	</section>
+	<!--  End Billboard  -->
+
+	<section class="features">
+
+		<div class="wrapper">
+				<h3 class = "headline" align="center"> What's Hot? </h3>
+				<div class="feature">
+					<div class="ficon">
+						<img src="img/skiing_icon.jpg" alt="">
+					</div>
+					<div class="details_exp" id = "skiing">
+						<h3>Skiing/Snowboarding</h3>
+						<p>Slopes are opening up around the country. Find your best option for shredding some pow</p>
+						<a href="#">where should I go?<span>→</span></a>
+					</div>
+				</div>
+				<div class="feature">
+					<div class="ficon">
+						<img src="img/hiking_icon.jpg" alt="">
+					</div>
+					<div class="details_exp" id="hiking">
+						<h3>Hiking</h3>
+						<p>We got burly, we got casual, day hikes, or backpacking trips. They're closer than you think</p>
+						<a href="#">take a peek<span>→</span></a>
+					</div>
+				</div>
+				<div class="feature">
+					<div class="ficon">
+						<img src="img/rafting_icon.png" alt="">
+					</div>
+					<div class="details_exp" id="rafting">
+						<h3>White Water Rafting</h3>
+						<p>Get out on the water and add a little thrill to your weekend with some wild rapids</p>
+						<a href="#">take me there<span>→</span></a>
+					</div>
+				</div>
+				<div class="feature">
+					<div class="ficon">
+						<img src="img/surfing_icon.jpg" alt="">
+					</div>
+					<div class="details_exp" id="surfing">
+						<h3>Surfing</h3>
+						<p>The swells are coming in and you're gonna want to be where they are the best</p>
+						<a href="#">find your beach<span>→</span></a>
+					</div>
+				</div>
+
+
+			</div>
+
+	</section><!--  End Features  -->
+
+</body>
+</html>
