@@ -11,7 +11,7 @@ def index(request):
 
     trips = filter_trips(min_popularity, max_cost, max_distance, order_by)[:6]
     context = {'trips': trips}
-    return render(request, 'activitysearch/index.html', context)
+    return render(request, 'activitysearch/homepage.html', context)
 
 def detail(request):
     context = {}
