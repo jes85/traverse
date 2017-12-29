@@ -11,11 +11,19 @@ def index(request):
 
     trips = filter_trips(min_popularity, max_cost, max_distance, order_by)[:6]
     context = {'trips': trips}
-    return render(request, 'activitysearch/homepage.html', context)
+    return render(request, 'activitysearch/index.html', context)
 
 def detail(request):
     context = {}
     return render(request, 'activitysearch/detail.html', context)
+
+def home(request):
+    context = {}
+    return render(request, 'activitysearch/homepage.html', context)
+
+def search(request):
+    context = {}
+    return render(request, 'activitysearch/search.html', context)
 
 def filter_trips(min_popularity, max_cost, max_distance, order_by):
     return Trip.objects.filter(rating__gte=min_popularity, cost__lte=max_cost, distance__lte=max_distance).order_by(order_by)
